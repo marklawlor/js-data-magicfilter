@@ -20,7 +20,7 @@
     "jsdata"
   ],
   "author": "Mark Lawlor",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "browserify": "^10.2.4",
     "jasmine-node": "^1.14.5",
