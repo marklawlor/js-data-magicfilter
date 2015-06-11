@@ -41,7 +41,7 @@ DS.filter('account', { id: 'clients'}); // Will get the active accounts clients
 
 ## Angular
 
-If you are using Angular.JS two services are included in the 'js-data' module, magicfilter and magicfilterTransform.
+If you are using Angular.JS two services are included in the 'js-data' module, magicFilter and magicFilterTransform.
 
 These are the filter and transform functions.
 
