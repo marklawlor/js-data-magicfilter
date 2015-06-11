@@ -1,0 +1,27 @@
+{
+  "name": "js-data-magicfilter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine-node",
+    "start": "jasmine-node --color --autotest .",
+    "buildVanilla": "cp index.js dist/magicFilter.js",
+    "buildAngular": "browserify build/angular.js -o dist/magicFilter.angular.js",
+    "postbuildAngular": "uglifyjs dist/magicFilter.angular.js -c -m -o dist/magicFilter.angular.min.js",
+    "buildBrowserify": "browserify index.js -o dist/magicFilter.browserify.js",
+    "postbuildBrowserify": "uglifyjs dist/magicFilter.browserify.js -c -m -o dist/magicFilter.browserify.min.js",
+    "build": "npm run buildVanilla && npm run buildBrowserify && npm run buildAngular"
+  },
+  "keywords": [
+    "js-data",
+    "jsdata"
+  ],
+  "author": "Mark Lawlor",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^10.2.4",
+    "jasmine-node": "^1.14.5",
+    "uglify-js": "^2.4.23"
+  }
+}
