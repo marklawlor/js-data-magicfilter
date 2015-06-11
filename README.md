@@ -1,4 +1,4 @@
-# JS-Data-magicfilter
+# js-data-magicfilter
 
 js-data-magicfilter is a replacement filter function for a js-data resource.
 
