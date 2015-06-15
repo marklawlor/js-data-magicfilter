@@ -53,6 +53,10 @@ function transform(rules, params){
         var value = rule.value;
         var replacement = rule.replacement;
 
+        if(typeof where[key] !== 'object'){
+            return;
+        }
+
         Object.keys(where[key]).forEach(function(operator){
             // Only process attributes where the key & values match
             if(where[key][operator] !== value){
