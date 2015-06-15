@@ -1,6 +1,6 @@
 {
   "name": "js-data-magicfilter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "repository" :
@@ -8,11 +8,11 @@
   "scripts": {
     "test": "jasmine-node",
     "start": "jasmine-node --color --autotest .",
-    "buildVanilla": "cp index.js dist/magicFilter.js",
-    "buildAngular": "browserify build/angular.js -o dist/magicFilter.angular.js",
-    "postbuildAngular": "uglifyjs dist/magicFilter.angular.js -c -m -o dist/magicFilter.angular.min.js",
-    "buildBrowserify": "browserify index.js -o dist/magicFilter.browserify.js",
-    "postbuildBrowserify": "uglifyjs dist/magicFilter.browserify.js -c -m -o dist/magicFilter.browserify.min.js",
+    "buildVanilla": "cp index.js dist/magicfilter.js",
+    "buildAngular": "browserify build/angular.js -o dist/magicfilter.angular.js",
+    "postbuildAngular": "uglifyjs dist/magicfilter.angular.js -c -m -o dist/magicfilter.angular.min.js",
+    "buildBrowserify": "browserify index.js -o dist/magicfilter.browserify.js",
+    "postbuildBrowserify": "uglifyjs dist/magicfilter.browserify.js -c -m -o dist/magicfilter.browserify.min.js",
     "build": "npm run buildVanilla && npm run buildBrowserify && npm run buildAngular"
   },
   "keywords": [
