@@ -13,6 +13,7 @@
     "postbuildAngular": "uglifyjs dist/magicfilter.angular.js -c -m -o dist/magicfilter.angular.min.js",
     "buildBrowserify": "browserify index.js -o dist/magicfilter.browserify.js",
     "postbuildBrowserify": "uglifyjs dist/magicfilter.browserify.js -c -m -o dist/magicfilter.browserify.min.js",
+    "prebuild": "rm -rf ./dist/*",
     "build": "npm run buildVanilla && npm run buildBrowserify && npm run buildAngular"
   },
   "keywords": [
