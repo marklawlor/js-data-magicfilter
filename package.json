@@ -1,10 +1,12 @@
 {
   "name": "js-data-magicfilter",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
-  "repository" :
-      { "type" : "git" , "url" : "https://github.com/marklawlor/js-data-magicfilter" },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marklawlor/js-data-magicfilter"
+  },
   "scripts": {
     "test": "jasmine-node",
     "start": "jasmine-node --color --autotest .",
@@ -28,6 +30,6 @@
     "uglify-js": "^2.4.23"
   },
   "peerDependencies": {
-      "js-data": "1.8.0"
+    "js-data": "1.8.0"
   }
 }
