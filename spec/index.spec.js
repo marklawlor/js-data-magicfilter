@@ -29,6 +29,10 @@ describe("magicFilterTransform", function() {
         });
     });
 
+    it("does not fail when params does not have a rule key", function() {
+        expect(magicFilterTransform(rules[0], {})).toEqual({ where: {} });
+    });
+
     it("can transform an array of rules", function() {
         expect(magicFilterTransform(rules, filterParams)).toEqual({
             where: {
